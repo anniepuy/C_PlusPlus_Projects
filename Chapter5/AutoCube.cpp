@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 auto findArea(int length, int width = 20, int height = 12);
 
 auto findArea(int length, int width, int height)
@@ -17,12 +15,12 @@ int main()
     int area;
 
     area = findArea(length, width, height);
-    cout << "First area: " << area << "\n\n";
+    std::cout << "First area: " << area << "\n\n";
 
     area = findArea(length, width);
-    cout << "Second area: " << area << "\n\n";
+    std::cout << "Second area: " << area << "\n\n";
 
     area = findArea(length);
-    cout << "Third area: " << area << "\n\n";
+    std::cout << "Third area: " << area << "\n\n";
     return 0;
 }
