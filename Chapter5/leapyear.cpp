@@ -9,12 +9,11 @@ int main()
     int input;
     cout << "Enter a year: ";
     cin >> input;
-
     if (isLeapYear(input))
-        cout << input << " is a leap year\n";
+        cout << input << " is a leap year.\n";
     else
-        cout << input << " is not a leap year\n";
-    return 0;  
+        cout << input << " is not a leap year.\n";
+    return 0;
 }
 
 bool isLeapYear(int year)
@@ -23,12 +22,12 @@ bool isLeapYear(int year)
     {
         if (year % 100 == 0)
         {
-            if (year % 400 == 0)
+            if (year % 400 ==0)
                 return true;
             else
-                return false;          
+                return false;      
         }
-        else 
+        else
             return true;
     }
     else 
