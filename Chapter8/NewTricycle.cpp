@@ -2,21 +2,20 @@
 
 using namespace std;
 
-//create the class
 class Tricycle
 {
 public:
-    Tricycle(int initialAge);
+    Tricycle(int initialAge); 
     ~Tricycle();
     int getSpeed();
     void setSpeed(int speed);
     void pedal();
     void brake();
 private:
-    int speed;
+    int speed();
 };
 
-//constructor for the object
+//constructor for the object in the class Tricycle
 Tricycle::Tricycle(int initialSpeed)
 {
     setSpeed(initialSpeed);
@@ -28,7 +27,7 @@ Tricycle::~Tricycle()
     //do nothing
 }
 
-// get the trike's speed
+//get the trikes speed
 int Tricycle::getSpeed()
 {
     return speed;
@@ -43,28 +42,28 @@ void Tricycle::setSpeed(int newSpeed)
     }
 }
 
-//pedal the trike
-void Tricycle::pedal()
+// pedal the trike
+void  Tricycle::pedal()
 {
-    setSpeed(speed +1);
+    setSpeed(speed + 1);
     cout << "\nPedaling; tricycle speed " << getSpeed() << " mph\n";
 }
 
-//apply the brake on the trike
+//apply the brake on the table
 void Tricycle::brake()
 {
     setSpeed(speed -1);
-    cout << "\nBraking; tricycle speed " << getSpeed() << "mph\n";
+    cout << "\nBraking; tricycle speed " << getSpeed() << " mph\n";
 }
 
-//creat a trike and ride it
+// create a trike and ride it
 int main()
 {
-    Tricycle wichita(5);
-    wichita.pedal();
-    wichita.pedal();
-    wichita.brake();
-    wichita.brake();
-    wichita.brake();
+    Tricycle witchita(5);
+    witchita.pedal();
+    witchita.pedal();
+    witchita.brake();
+    witchita.brake();
+    witchita.brake();
     return 0;
 }
