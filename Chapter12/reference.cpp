@@ -15,5 +15,9 @@ int main()
     cout << "intOne: " << intOne << endl;
     cout << "rSomeRef: " << rSomeRef << endl;
 
+    //asking for the address of the target reference
+    cout << "&intOne: " << &intOne << endl;
+    cout << "&rSomeRef: " << &rSomeRef << endl;
+
     return 0;
 }
